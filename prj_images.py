@@ -25,9 +25,9 @@ import numpy as np
 import dlib
 
 # Change the constants below
-FILENAME = 'two_people11.jpg'
-SAVE_IMAGE = 'final_image.png'
-PREDICTOR_FILE = '/Users/Kira/Documents/BYUI/2020 Winter/CS312 Vision and Graphics/face-alignment/shape_predictor_68_face_landmarks.dat'
+FILENAME = 'pic_samples/two_people0.jpg'
+SAVE_IMAGE = 'final_images/final_image.png'
+PREDICTOR_FILE = 'shape_predictor_68_face_landmarks.dat'
 
 """ helper functions """
 def crop_image(face_rect, image):
@@ -52,6 +52,7 @@ def extract_index_nparray(nparray):
 
 # loading image and creating temporary images that will help during the face swap
 img = cv2.imread(FILENAME)
+print(img)
 final_image = img.copy()
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img_new_face1 = np.zeros_like(img)

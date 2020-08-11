@@ -24,4 +24,6 @@ There are three different versions of this faceswap project:
     * haarcascade_frontalface_default.xml
     * haarcascade_frontalcatface_extended.xml
 
-**Note:** The haarcascade files can be found with cv2 installation, but they are included in the haarcascade_files folder for convenience. 
+**Note:** The haarcascade files can be found with cv2 installation, but they are included in the haarcascade_files folder for convenience.
+
+**Note:** Press 'q' to quit programs
